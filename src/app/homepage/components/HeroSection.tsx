@@ -127,27 +127,7 @@ export default function HeroSection() {
         </p>
       </div>
 
-      <style jsx>{`
-        .text-gold { color: #C9A84C; }
-        .bg-gold { background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728); }
-        .border-gold { border-color: #BF953F; }
-        
-        @keyframes float-slow {
-          0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
-          50% { transform: translateY(-30px) translateX(10px) rotate(5deg); }
-        }
-        .animate-float-slow { animation: float-slow 12s ease-in-out infinite; }
-        
-        .animate-float-medium { animation: float-slow 8s ease-in-out infinite reverse; }
-        
-        .animate-fade-in-up {
-          animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(40px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
+
     </section>
   );
 }

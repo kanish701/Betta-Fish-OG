@@ -86,15 +86,15 @@ export default function HowItWorksSection() {
               <div className="relative p-10 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-xl hover:border-gold/30 transition-all duration-500">
                 {/* Icon/Label */}
                 <div className="mb-8 inline-block">
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-gold/60 border-b border-gold/30 pb-2">
-                        {step.icon}
-                    </span>
+                  <span className="text-[10px] tracking-[0.3em] uppercase text-gold/60 border-b border-gold/30 pb-2">
+                    {step.icon}
+                  </span>
                 </div>
 
                 <h3 className="text-2xl font-serif font-bold text-white mb-4 group-hover:text-gold transition-colors">
                   {step.title}
                 </h3>
-                
+
                 <p className="text-white/40 leading-relaxed font-light group-hover:text-white/60 transition-colors">
                   {step.desc}
                 </p>
@@ -108,26 +108,21 @@ export default function HowItWorksSection() {
 
         {/* Note: The "24-Hour Seal" */}
         <div className="mt-24 flex justify-center">
-            <div className="inline-flex items-center gap-6 px-8 py-4 rounded-full border border-gold/20 bg-gold/5 backdrop-blur-sm">
-                <div className="flex -space-x-2">
-                    {[1, 2, 3].map((n) => (
-                        <div key={n} className="w-8 h-8 rounded-full border border-[#020408] bg-gold flex items-center justify-center text-[10px] font-bold text-black">
-                            ✓
-                        </div>
-                    ))}
+          <div className="inline-flex items-center gap-6 px-8 py-4 rounded-full border border-gold/20 bg-gold/5 backdrop-blur-sm">
+            <div className="flex -space-x-2">
+              {[1, 2, 3].map((n) => (
+                <div key={n} className="w-8 h-8 rounded-full border border-[#020408] bg-gold flex items-center justify-center text-[10px] font-bold text-black">
+                  ✓
                 </div>
-                <p className="text-xs tracking-widest text-gold uppercase font-medium">
-                    <span className="text-white">Priority Status:</span> 24-Hour Exclusive Reservation Guaranteed
-                </p>
+              ))}
             </div>
+            <p className="text-xs tracking-widest text-gold uppercase font-medium">
+              <span className="text-white">Priority Status:</span> 24-Hour Exclusive Reservation Guaranteed
+            </p>
+          </div>
         </div>
       </div>
 
-      <style jsx>{`
-        .text-gold { color: #BF953F; }
-        .bg-gold { background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728); }
-        .border-gold { border-color: #BF953F; }
-      `}</style>
     </section>
   );
 }
